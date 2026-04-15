@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(233, 232, 232);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0px auto;
+    background-color: #f8f8f8;
+    padding: 40px;
+}
+
+p {
+    line-height: 1.6;
+    text-indent: 40px;
+}
+    bottom {
+        all: unset;
+        background-color: rgb(191, 129, 248);
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-family: "Poppions", Arial, Helvetica, sans-serif;
+        border: 2px solid rgb(183, 112, 248);
+        cursor: pointer;
+        transition: background 0.2;
+    }
+
+    button:hover {
+        background-color: rgb(152, 77, 223);
+    }
