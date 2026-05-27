@@ -14,9 +14,10 @@ body {
 :root {
   --color-bg: #0e0e0e;
   --color-surface: rgba(26, 25, 25, 0.80);
-  --color-primary: #9a9de9;
+  --color-primary: #a3a6ff;
   --color-text: #ffffff;
   --color-text-muted: #adaaaa;
+
   --nav-height: 64px;
   --nav-padding: 2rem;
 }
@@ -30,16 +31,6 @@ body {
 .site-header {
   height: var(--nav-height);
   background: var(--color-surface);
-}
-
-.nav-inner {
-  display: flex;
-}
-
-.nav-inner {
-  display: flex;
-  align-items: center;
-  height: 100%;
 }
 
 .nav-inner {
@@ -96,34 +87,24 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-    .nav-inner{
-        flex-direction:column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-        gap: 1rem;
-    }
-    .nav-links li {
-        width: 100%;
-    }
-    .nav-links a {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        background: #332230;
-        border-radius: 8px;
-    }
-    .nav-actions {
-        width: 100%;
-    }
-    .btn-entrar {
-        width: 100%;
-        text-align: center;
-    }
-    }
+@media (max-width: 600px) {
 
+  .site-header {
+    height: auto;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+}
 
