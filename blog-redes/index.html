@@ -33,8 +33,23 @@
       </button>
     </div>
 
+    <button class="btn-hamburger">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+
   </nav>
 </header>
     
+<script>
+  let menu = document.querySelector(".btn-hamburger");
+  let nav = document.querySelector(".nav-inner");
+
+  menu.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+
+</script>
+
 </body>
 </html>
